@@ -1,8 +1,14 @@
 <template>
   <div class="container">
     <div class="header">
-      header
+      <ul>
+        <li>Home</li>
+        <li>Sobre</li>
+      </ul>
     </div>
+    <section class="banner">
+      <blog-banner/>
+    </section>
     <section class="content">
       <post-box/>
     </section>
@@ -10,10 +16,12 @@
 </template>
 
 <script>
+import BlogBanner from '../components/BlogBanner.vue'
 import PostBox from '../components/PostBox.vue'
 
 export default {
   components: {
+    BlogBanner,
     PostBox
   }
 }
@@ -26,8 +34,20 @@ export default {
   background-color: #dc8d80;
   color: #F7F3F0;
 }
+.banner {
+  margin: 50px 0;
+}
 .content {
   display: flex;
   justify-content: center;
+}
+ul, li {
+  list-style: none;
+  display: flex;
+  padding: 4px;
+  font-size: 14px;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 </style>
