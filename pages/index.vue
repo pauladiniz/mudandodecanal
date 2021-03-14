@@ -9,20 +9,27 @@
     <section class="banner">
       <blog-banner/>
     </section>
-    <section class="content">
-      <post-box/>
-    </section>
+    <div class="content">
+      <section class="post">
+        <post-box/>
+      </section>
+      <section class="sidebar">
+        <blog-sidebar/>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
 import BlogBanner from '../components/BlogBanner.vue'
 import PostBox from '../components/PostBox.vue'
+import BlogSidebar from '../components/BlogSidebar.vue'
 
 export default {
   components: {
     BlogBanner,
-    PostBox
+    PostBox,
+    BlogSidebar
   }
 }
 </script>
@@ -40,6 +47,9 @@ export default {
 .content {
   display: flex;
   justify-content: center;
+}
+.post {
+  margin: 0 50px;
 }
 ul, li {
   list-style: none;
