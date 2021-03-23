@@ -10,6 +10,7 @@
     "start": "nuxt start"
   },
   "dependencies": {
+    "@tryghost/content-api": "^1.5.1",
     "nuxt": "^2.0.0",
     "sass-loader": "^11.0.1",
     "scss": "^0.2.4"

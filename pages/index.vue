@@ -11,7 +11,10 @@
     </section>
     <div class="content">
       <section class="post">
-        <post-box/>
+        <!-- <post-box/> -->
+        <li v-for="post in posts" :key="post">
+          {{ post.title }}
+        </li>
       </section>
       <!-- <section class="sidebar">
         <blog-sidebar/>
@@ -24,12 +27,17 @@
 import BlogBanner from '../components/BlogBanner.vue'
 import PostBox from '../components/PostBox.vue'
 import BlogSidebar from '../components/BlogSidebar.vue'
+import { getPosts } from '../services/ghost'
 
 export default {
   components: {
     BlogBanner,
     PostBox,
     BlogSidebar
+  },
+  async asyncData () {
+    const posts = await getPosts();
+    return { posts: posts }
   }
 }
 </script>
