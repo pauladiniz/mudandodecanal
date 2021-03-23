@@ -13,9 +13,9 @@
       <section class="post">
         <post-box/>
       </section>
-      <section class="sidebar">
+      <!-- <section class="sidebar">
         <blog-sidebar/>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
@@ -49,7 +49,7 @@ export default {
   justify-content: center;
 }
 .post {
-  margin: 0 50px;
+  margin: 0 70px;
 }
 ul, li {
   list-style: none;
@@ -58,6 +58,6 @@ ul, li {
   font-size: 14px;
   justify-content: center;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
 }
 </style>

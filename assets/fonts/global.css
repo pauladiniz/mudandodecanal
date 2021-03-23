@@ -5,3 +5,10 @@
 	font-display: swap;
 	src: url('~assets/fonts/San Bernardino.ttf') format('truetype');
 }
+@font-face {
+	font-family: 'Chasing Embers';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('~assets/fonts/Chasing Embers.ttf') format('truetype');
+}

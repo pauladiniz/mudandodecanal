@@ -8,15 +8,12 @@
 
 <style scoped>
 .blog-logo {
-	background-color: #D2DBDA;
 	display: flex;
 	justify-content: center;
+	color: #425E6F;
 	align-items: center;
-	opacity: 0.4;
-	width: 300px;
-	height: 300px;
-	border-radius: 60% 75% 60% 70%;
-	font-size: 40px;
-	font-family: 'San Bernardino';
+	font-size: 100px;
+	text-align: center;
+	font-family: 'Chasing Embers';
 }
 </style>

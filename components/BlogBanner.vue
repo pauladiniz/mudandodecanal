@@ -18,6 +18,6 @@ export default {
 .blog-banner {
 	display: flex;
 	justify-content: center;
-	height: 500px;
+	height: 300px;
 }
 </style>
