@@ -24,25 +24,25 @@ export default {
 
 <style scoped>
 .post-title {
-display: flex;
-align-items: center;
-height: 30px;
-font-size: 20px;
-font-family: 'Raleway';
-text-transform: uppercase;
-font-weight: 600;
-padding: 0 20px;
+	display: flex;
+	align-items: center;
+	height: 30px;
+	font-size: 20px;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 0 20px;
 }
 .post-box {
-width: 800px;
-min-height: 350px;
+	width: 800px;
+	min-height: 350px;
 }
 .post-content {
-text-align: justify;
-color: #4E4E4E;
-font-family: 'Raleway';
+	text-align: justify;
+	color: #4E4E4E;
+	font-family: 'Raleway';
 }
 p {
-margin-top: 20px;
+	margin-top: 20px;
 }
 </style>
