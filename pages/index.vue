@@ -11,10 +11,12 @@
     </section>
     <div class="content">
       <section class="post">
-        <!-- <post-box/> -->
-        <li v-for="post in posts" :key="post">
-          {{ post.title }}
-        </li>
+        <post-box
+          v-for="(post, index) in posts"
+          :key="index"
+          :title="post.title"
+          :description="post.excerpt"
+        />
       </section>
       <!-- <section class="sidebar">
         <blog-sidebar/>
