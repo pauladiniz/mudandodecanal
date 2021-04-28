@@ -25,16 +25,16 @@ export default {
 <style scoped>
 .post-title {
 	display: flex;
+	width: 700px;
 	align-items: center;
 	height: 30px;
 	font-size: 20px;
 	font-family: 'Raleway';
 	text-transform: uppercase;
 	font-weight: 600;
-	padding: 0 20px;
 }
 .post-box {
-	width: 800px;
+	width: 700px;
 	min-height: 350px;
 }
 .post-content {
@@ -44,5 +44,6 @@ export default {
 }
 p {
 	margin-top: 20px;
+	font-size: 14px;
 }
 </style>

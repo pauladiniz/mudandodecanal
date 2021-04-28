@@ -1,9 +1,19 @@
 <template>
   <div>
+    <blog-header/>
     <nuxt />
   </div>
 </template>
 
+<script>
+import BlogHeader from '../components/BlogHeader.vue';
+
+export default {
+  components: {
+    BlogHeader
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Raleway', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -15,7 +25,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #F6F3EE;
+  background-color: #F6F3EE
 }
 
 *,

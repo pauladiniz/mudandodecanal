@@ -15,3 +15,13 @@ export async function getPosts() {
       console.error(err);
     });
 }
+
+export async function getSinglePost(postSlug) {
+  return await ghostAPI.posts
+      .read({
+          slug: postSlug
+      })
+      .catch(err => {
+          console.error(err);
+      })
+}

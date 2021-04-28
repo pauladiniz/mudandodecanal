@@ -1,11 +1,5 @@
 <template>
   <div class="container">
-    <div class="header">
-      <ul>
-        <li>Home</li>
-        <li>Sobre</li>
-      </ul>
-    </div>
     <section class="banner">
       <blog-banner/>
     </section>
@@ -16,11 +10,12 @@
           :key="index"
           :title="post.title"
           :description="post.excerpt"
-        />
+        >
+        </post-box>
       </section>
-      <!-- <section class="sidebar">
+      <section class="sidebar">
         <blog-sidebar/>
-      </section> -->
+      </section>
     </div>
   </div>
 </template>
@@ -45,12 +40,6 @@ export default {
 </script>
 
 <style>
-.header {
-  width: 100%;
-  height: 40px;
-  background-color: #dc8d80;
-  color: #F7F3F0;
-}
 .banner {
   margin: 50px 0;
 }
